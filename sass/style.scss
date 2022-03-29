@@ -1,0 +1,342 @@
+$violeta: #F0B9D3;
+$rosa: #AD72EF;
+$rosa-transp: #f0b9d380;
+$violeta-transp: #ac72ef86;
+html {
+    margin: 0;
+    padding: 0;
+    size: 1rem;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* 
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+
+
+ ::-webkit-scrollbar-thumb {
+    background: $rosa;
+    border-radius: 10px;
+}
+
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: $violeta;
+} */
+
+body {
+    margin: 0;
+    background-color: #f0b9d330;
+}
+
+#contenedorServicios {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1600px;
+    justify-content: center;
+    div {
+        border-radius: 30px;
+        border: 3px solid $violeta;
+        padding: 10px;
+        margin: 20px;
+        height: 388px;
+        width: 200px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        img {
+            height: 100px;
+            width: 150px;
+            align-self: center;
+        }
+        .btn-agregar {
+            border-radius: 50px;
+            background: $rosa-transp;
+            width: 110px;
+            height: 30px;
+            position: relative;
+            top: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            transition: all 1s;
+            &:hover {
+                cursor: pointer;
+                background: $violeta-transp;
+            }
+        }
+    }
+}
+
+h2 {
+    color: $rosa;
+    text-align: center;
+}
+
+.desc_carrito {
+    background-color: $rosa-transp;
+    border-radius: 3px;
+}
+
+#carrito-contenedor {
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    left: 0px;
+    right: 0px;
+    height: 400px;
+    width: 100%;
+    overflow-y: auto;
+    .servicioEnCarrito {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        height: 220px;
+        border: 3px solid #ac72ef86;
+        border-radius: 30px;
+        flex-wrap: nowrap;
+        padding: 15px;
+        margin: 5px;
+    }
+    #carrito-vacio {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+li {
+    &:hover {
+        background-color: $rosa-transp;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.precioProducto {
+    background-color: $violeta-transp;
+    position: relative;
+    right: -70%;
+    width: 160px;
+    margin: 13px 4px 0px;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100px;
+    max-height: fit-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.modal-carrito {
+    border-radius: 30px;
+    border: 3px solid $rosa;
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    width: 1000px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-carrito {
+    margin: 50px;
+    h3 {
+        margin-top: 3px;
+        color: $rosa;
+        padding-bottom: 5px;
+        font-size: x-large;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    #carritoCerrar {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        color: red;
+        border: none;
+        font-weight: 900;
+        border-radius: 50px;
+        background-color: white;
+        &:hover {
+            cursor: pointer;
+            background-color: red;
+            color: white;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .precioProducto {
+        padding-top: 10px;
+    }
+}
+
+.boton-eliminar {
+    background-color: white;
+    padding: 5px;
+    color: red;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    left: 175px;
+    &:hover {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+    }
+     ::before {
+        width: 30px;
+        height: 30px;
+        color: red;
+    }
+}
+
+.mensaje {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.reserva {
+    border-radius: 30px;
+    padding: 15px;
+    margin: 20px;
+    border: 3px solid $rosa;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    div {
+        padding: 8px 0px;
+        input,
+        select {
+            width: 130px;
+            border-radius: 30px;
+        }
+        #btn {
+            padding: 6px;
+            border-radius: 30px;
+            border: 1px solid $violeta;
+            &:hover {
+                background-color: $violeta;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+header {
+    top: 0;
+    height: 85px;
+    border-bottom: 3px solid $rosa;
+    padding: 20px;
+    color: #AD72EF;
+    h1 {
+        padding: 5px;
+        margin-top: 15px;
+        font-size: 2.3rem;
+    }
+    ul {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: center;
+        top: 60px;
+        padding-inline-start: 0px;
+    }
+    li {
+        border: 2px solid $violeta;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        color: black;
+    }
+}
+
+h1 {
+    top: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#boton-carrito {
+    position: absolute;
+    right: 28px;
+    top: 18px;
+    border-radius: 30px;
+    background-color: #f0b9d300;
+    border: 0px;
+    &:hover {
+        cursor: pointer;
+    }
+    #contadorCarrito {
+        font-size: x-large;
+        color: $rosa;
+        padding: 5px;
+    }
+}
+
+footer {
+    position: relative;
+    justify-content: space-evenly;
+    border-top: 2px solid $rosa;
+    bottom: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
