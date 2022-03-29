@@ -1,17 +1,91 @@
-[
-    { "id": 0, "descripcion": "ESMALTADO SEMIPERMANENTE", "precio": 650, "cantidad": 1 },
-    { "id": 1, "descripcion": "SEMIPERMANENTE CON KAPPING", "precio": 800, "cantidad": 1 },
-    { "id": 2, "descripcion": "ESCULPIDAS CON SEMIPERMANENTE", "precio": 1000, "cantidad": 1 },
-    { "id": 3, "descripcion": "SERVICE ESCULPIDAS CON SEMIPERMANENTE", "precio": 800, "cantidad": 1 },
-    { "id": 4, "descripcion": "PIES CON ESMALTE COMUN", "precio": 600, "cantidad": 1 },
-    { "id": 5, "descripcion": "PIES CON ESMALTADO SEMIPERMANENTE", "precio": 700, "cantidad": 1 },
-    { "id": 6, "descripcion": "PEDICURIA CON ESMALTADO COMUN", "precio": 800, "cantidad": 1 },
-    { "id": 7, "descripcion": "PEDICURIA CON ESMALTADO SEMIPERMANENTE", "precio": 900, "cantidad": 1 },
-    { "id": 8, "descripcion": "PERMANENTE DE PESTANAS", "precio": 700, "cantidad": 1 },
-    { "id": 9, "descripcion": "LIFTING DE PESTANAS", "precio": 700, "cantidad": 1 },
-    { "id": 10, "descripcion": "TINTE DE PESTAÑAS", "precio": 150, "cantidad": 1 },
-    { "id": 11, "descripcion": "PERFILADO DE CEILAS", "precio": 300, "cantidad": 1 },
-    { "id": 12, "descripcion": "LAMINADO CON PERFILADO DE CEIAS", "precio": 600, "cantidad": 1 },
-    { "id": 13, "descripcion": "PESTAÑAS PXP", "precio": 1000, "cantidad": 1 },
-    { "id": 14, "descripcion": "SERVICE DE PXP", "precio": 800, "cantidad": 1 }
+[{
+        "id": 0,
+        "descripcion": "ESMALTADO SEMIPERMANENTE",
+        "precio": 650,
+        "cantidad": 1
+    },
+    {
+        "id": 1,
+        "descripcion": "SEMIPERMANENTE CON KAPPING",
+        "precio": 800,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "descripcion": "ESCULPIDAS CON SEMIPERMANENTE",
+        "precio": 1000,
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "descripcion": "SERVICE ESCULPIDAS CON SEMIPERMANENTE",
+        "precio": 800,
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "descripcion": "PIES CON ESMALTE COMUN",
+        "precio": 600,
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "descripcion": "PIES CON ESMALTADO SEMIPERMANENTE",
+        "precio": 700,
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "descripcion": "PEDICURIA CON ESMALTADO COMUN",
+        "precio": 800,
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "descripcion": "PEDICURIA CON ESMALTADO SEMIPERMANENTE",
+        "precio": 900,
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "descripcion": "PERMANENTE DE PESTANAS",
+        "precio": 700,
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "descripcion": "LIFTING DE PESTANAS",
+        "precio": 700,
+        "cantidad": 1
+    },
+    {
+        "id": 10,
+        "descripcion": "TINTE DE PESTAÑAS",
+        "precio": 150,
+        "cantidad": 1
+    },
+    {
+        "id": 11,
+        "descripcion": "PERFILADO DE CEILAS",
+        "precio": 300,
+        "cantidad": 1
+    },
+    {
+        "id": 12,
+        "descripcion": "LAMINADO CON PERFILADO DE CEIAS",
+        "precio": 600,
+        "cantidad": 1
+    },
+    {
+        "id": 13,
+        "descripcion": "PESTAÑAS PXP",
+        "precio": 1000,
+        "cantidad": 1
+    },
+    {
+        "id": 14,
+        "descripcion": "SERVICE DE PXP",
+        "precio": 800,
+        "cantidad": 1
+    }
 ]
