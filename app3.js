@@ -17,8 +17,7 @@ const precioTotal = document.getElementById('precioTotal');
 
 function verServicios() {
     contenedor_servicios.innerHTML = '';
-    console.log(fetch('/servicios.json'));
-    fetch('/servicios.json')
+    fetch('servicios.json')
         .then((res) => res.json())
         .then((servicio) => {
             array = servicio;
