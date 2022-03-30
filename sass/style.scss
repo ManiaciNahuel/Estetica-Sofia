@@ -11,29 +11,23 @@ html {
     font-style: normal;
 }
 
-
-/* 
-
 ::-webkit-scrollbar {
     width: 20px;
 }
 
-
-
  ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
-
+}
 
  ::-webkit-scrollbar-thumb {
     background: $rosa;
     border-radius: 10px;
 }
 
-
  ::-webkit-scrollbar-thumb:hover {
     background: $violeta;
-} */
+}
 
 body {
     margin: 0;
@@ -130,6 +124,7 @@ li {
     }
     a {
         text-decoration: none;
+        color: black;
     }
 }
 
@@ -240,6 +235,10 @@ li {
     bottom: 15px;
     border: 2px solid red;
     border-radius: 10px;
+}
+
+#mail {
+    width: 220px;
 }
 
 .reserva {

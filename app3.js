@@ -145,6 +145,7 @@ function reservar() {
         let servicio = document.getElementById("servicio").value
         let fecha = document.getElementById("fecha").value
         let horario = document.getElementById('hora').value
+        let mail = document.getElementById("mail").value
 
         let newReserva = { dia: fecha, hora: horario };
 
@@ -160,11 +161,11 @@ function reservar() {
                 timer: 950,
                 position: 'top-end',
             })
-        } else { /* Validación de selección de fecha y horario, no puede estar sin seleccionar para reservar */
-            if (fecha == "" || horario == "") {
+        } else { /* Validación de selección de fecha, mail y horario, no puede estar sin seleccionar para reservar */
+            if (fecha == "" || horario == "" || mail == "") {
                 Swal.fire({
                     icon: 'error',
-                    title: "Falta seleccionar algún dato",
+                    title: "Falta algún dato",
                     showConfirmButton: false,
                     timer: 950,
                     position: 'top-end',
@@ -182,6 +183,7 @@ function reservar() {
                     Swal.fire({
                             icon: 'success',
                             title: 'Servicio reservado',
+                            text: 'Te llegará la confirmación por mail',
                             showConfirmButton: false,
                             timer: 1200,
                             position: 'top-end',
